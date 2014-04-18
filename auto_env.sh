@@ -24,7 +24,7 @@ git clone https://github.com/ervandew/supertab.git
 cd $supertab_tool && make && make install && cd root_dir
 
 ### git auto completion
-wget https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 cp -rf git-completion.bash ~/.git-completion.sh
 echo "source ~/.git-completion.sh" >> ~/.bashrc
 
