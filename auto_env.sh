@@ -30,4 +30,3 @@ echo "source ~/.git-completion.sh" >> ~/.bashrc
 
 ### git shortcuts
 cp -rf gitconfig ~/.gitconfig
-git config --global core.editor "vim"
