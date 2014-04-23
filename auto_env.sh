@@ -31,4 +31,4 @@ echo "source ~/.git-completion.sh" >> ~/.bashrc
 ### git shortcuts
 cp -rf gitconfig ~/.gitconfig
 
-
+###
