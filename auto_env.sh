@@ -30,6 +30,7 @@ cp -rf git-completion.bash ~/.git-completion.sh
 echo "source ~/.git-completion.sh" >> ~/.bashrc
 
 ### git shortcuts
+cd $root_dir
 cp -rf gitconfig ~/.gitconfig
 
 ###
