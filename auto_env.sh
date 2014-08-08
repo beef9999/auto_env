@@ -7,12 +7,13 @@ filetype plugin indent on
 set completeopt=longest,menu
 set shiftwidth=4
 set softtabstop=4
+set hlsearch
 set nu"
 
-#sudo apt-get update
-#sudo apt-get upgrade -y
-#sudo apt-get install vim -y
-#sudo apt-get install git -y
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install vim -y
+sudo apt-get install git -y
 
 mkdir $tools_dir && cd $tools_dir
 
