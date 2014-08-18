@@ -1,4 +1,4 @@
-root_dir='pwd'
+root_dir=`pwd`
 tools_dir="env_tools"
 supertab_tool="supertab"
 vimrc_text="syntax on
