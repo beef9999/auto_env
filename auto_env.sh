@@ -8,7 +8,8 @@ set completeopt=longest,menu
 set shiftwidth=4
 set softtabstop=4
 set hlsearch
-set nu"
+set nu
+set encoding=utf-8"
 
 sudo apt-get update
 sudo apt-get upgrade -y
