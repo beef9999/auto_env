@@ -18,6 +18,16 @@ set background=dark
 set nu
 set encoding=utf-8"
 
+
+function requires_user {
+    if [[ $EUID -eq 0 ]]; then
+        echo "ERROR: You should run the program as ordinary user" 2>&1
+        exit
+    fi
+}
+
+requires_user
+
 sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 sudo apt-get install vim -y
