@@ -1,5 +1,4 @@
 #!/bin/bash
-login_user=`whoami`
 root_dir=`pwd`
 
 target_user=$1
@@ -15,7 +14,7 @@ function requires_root {
 
 requires_root
 
-if [ ! -n "$login_user" ]; then
+if [ ! -n "$target_user" ]; then
     echo "Specify user"
     exit
 fi

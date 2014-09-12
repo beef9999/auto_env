@@ -40,7 +40,7 @@ rm -rf ~/.vimrc
 echo -e "$vimrc_text" > ~/.vimrc
 
 git clone https://github.com/ervandew/supertab.git
-cd $supertab_tool && make && make install && cd root_dir
+cd $supertab_tool && make && make install && cd $root_dir
 
 sudo sed -i -e '/"if\shas("autocmd")/,/"endif/ s/^"//' /etc/vim/vimrc
 
