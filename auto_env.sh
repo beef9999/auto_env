@@ -1,3 +1,7 @@
+#!/bin/bash
+
+# Note: only for ubuntu
+
 export DEBIAN_FRONTEND=noninteractive
 
 login_user=`whoami`
@@ -11,6 +15,7 @@ set completeopt=longest,menu
 set expandtab
 set ts=4
 set hlsearch
+set background=dark
 set nu
 set encoding=utf-8"
 
@@ -40,7 +45,7 @@ cd $root_dir
 cp -rf gitconfig ~/.gitconfig
 
 ### add current user into sudo group
-sudo sed -i -e "/%sudo\s*ALL=(ALL:ALL)\s*ALL/ a login_user ALL=(ALL:ALL) NOPASSWD:NOPASSWD:ALL\n" /etc/sudoers
+sudo sed -i -e "/%sudo\s*ALL=(ALL:ALL)\s*ALL/ a $login_user ALL=(ALL:ALL) NOPASSWD:NOPASSWD:ALL\n" /etc/sudoers
 
 
 
