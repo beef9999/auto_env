@@ -44,8 +44,6 @@ echo "source ~/.git-completion.sh" >> ~/.bashrc
 cd $root_dir
 cp -rf gitconfig ~/.gitconfig
 
-### add current user into sudo group
-sudo sed -i -e "/%sudo\s*ALL=(ALL:ALL)\s*ALL/ a $login_user ALL=(ALL:ALL) NOPASSWD:NOPASSWD:ALL\n" /etc/sudoers
 
 
 
