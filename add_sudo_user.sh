@@ -2,7 +2,7 @@
 login_user=`whoami`
 root_dir=`pwd`
 
-login_user=$1
+target_user=$1
 
 ### add specified user into sudo group
 
@@ -20,5 +20,6 @@ if [ ! -n "$login_user" ]; then
     exit
 fi
 
-sed -i -e "/%sudo\s*ALL=(ALL:ALL)\s*ALL/ a $login_user ALL=(ALL:ALL) NOPASSWD:NOPASSWD:ALL\n" /etc/sudoers
+sed -i -e "/%sudo\s*ALL=(ALL:ALL)\s*ALL/ a $target_user ALL=(ALL:ALL) NOPASSWD:NOPASSWD:ALL\n" /etc/sudoers
 
+chown $target_user $root_dir

@@ -33,7 +33,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 sudo apt-get install vim -y
 sudo apt-get install git -y
 
-mkdir $tools_dir && cd $tools_dir
+mkdir -p $tools_dir && cd $tools_dir
 
 ### vim
 rm -rf ~/.vimrc
