@@ -2,7 +2,6 @@
 
 # Note: only for ubuntu
 
-export DEBIAN_FRONTEND=noninteractive
 
 login_user=`whoami`
 root_dir=`pwd`
@@ -20,7 +19,7 @@ set nu
 set encoding=utf-8"
 
 sudo apt-get update
-sudo apt-get upgrade -y
+sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 sudo apt-get install vim -y
 sudo apt-get install git -y
 
