@@ -21,4 +21,4 @@ fi
 
 sed -i -e "/%sudo\s*ALL=(ALL:ALL)\s*ALL/ a $target_user ALL=(ALL:ALL) NOPASSWD:NOPASSWD:ALL\n" /etc/sudoers
 
-chown $target_user $root_dir
+chown -R $target_user $root_dir
