@@ -12,7 +12,9 @@ syntax enable
 filetype plugin indent on
 set completeopt=longest,menu
 set expandtab
-set ts=4
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set hlsearch
 set background=dark
 set nu
