@@ -33,7 +33,6 @@ requires_user
 sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 sudo apt-get install vim -y
-sudo apt-get install git -y
 
 mkdir -p $tools_dir && cd $tools_dir
 
@@ -55,6 +54,7 @@ echo "source ~/.git-completion.sh" >> ~/.bashrc
 cd $root_dir
 cp -rf gitconfig ~/.gitconfig
 
-
+### bash
+export GREP_OPTIONS='--color=auto -in'
 
 
