@@ -55,6 +55,6 @@ cd $root_dir
 cp -rf gitconfig ~/.gitconfig
 
 ### bash
-export GREP_OPTIONS='--color=auto -in'
+export GREP_OPTIONS='--color=auto -i'
 
 
